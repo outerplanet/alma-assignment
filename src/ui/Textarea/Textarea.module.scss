@@ -1,0 +1,15 @@
+@use 'variables' as vars;
+
+.textarea {
+	border: vars.$border-primary;
+	border-radius: vars.$border-rad-light;
+	padding: 0.7em;
+
+	&:hover {
+		border-color: var(--border-color-primary-hover);
+	}
+
+	&::placeholder {
+		opacity: 0.8;
+	}
+}

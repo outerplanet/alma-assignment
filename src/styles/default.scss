@@ -1,0 +1,71 @@
+@use 'variables' as vars;
+
+*,
+:before,
+:after {
+	margin: 0;
+	padding: 0;
+}
+
+a,
+button,
+input,
+textarea {
+	color: inherit;
+	font-weight: inherit;
+	line-height: 1.4;
+	transition: vars.$transition-duration;
+	transition-property: vars.$transition-property;
+
+	&:hover {
+		transition: 0s;
+	}
+}
+
+button,
+input,
+textarea {
+	background: none;
+	border: none;
+}
+
+input:not([type='checkbox']):not([type='radio']),
+textarea {
+	min-width: 0;
+	max-width: none;
+	width: 100%;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+button {
+	cursor: pointer;
+	font-size: inherit;
+	text-align: left;
+}
+
+[role='button'] {
+	cursor: pointer;
+	transition: vars.$transition-duration;
+	transition-property: vars.$transition-property;
+}
+
+textarea {
+	resize: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+iframe {
+	border: none;
+}

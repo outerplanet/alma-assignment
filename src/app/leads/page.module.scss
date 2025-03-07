@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	align-items: flex-start;
+}
+
+.content {
+	flex-grow: 1;
+	max-width: 1000px;
+	padding: 2em;
+}
+
+.header {
+	display: flex;
+	gap: 1em;
+	margin-top: 1.5em;
+
+	.search {
+		width: 320px;
+	}
+}
+
+.table {
+	margin-top: 1em;
+}
+
+.updateLead {
+	margin-top: 1.5em;
+	margin-left: auto;
+}

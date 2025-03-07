@@ -1,0 +1,59 @@
+.heading {
+	padding: 100px 0 170px;
+	position: relative;
+
+	.title {
+		font-size: 3.5em;
+		margin-top: 1em;
+	}
+
+	.button {
+		display: inline-flex;
+		margin-top: 1.5em;
+	}
+
+	.background {
+		background-image: url('/immigration-case-background.webp');
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+
+		&::before {
+			content: '';
+			background-color: rgba(217, 222, 164, 0.9);
+			position: absolute;
+			inset: 0;
+		}
+	}
+}
+
+.content {
+	padding: 3em 0;
+	text-align: center;
+
+	.description {
+		font-weight: 500;
+		margin-top: 1em;
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5em;
+		max-width: 450px;
+		margin: 3em auto 0;
+		text-align: left;
+	}
+
+	.subtitle {
+		font-size: 1.5em;
+		margin-top: 1em;
+		text-align: center;
+	}
+
+	.submit {
+		margin-top: 1em;
+	}
+}

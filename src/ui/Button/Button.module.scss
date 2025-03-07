@@ -1,0 +1,42 @@
+@use 'variables' as vars;
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&_background {
+		background-color: var(--color-primary);
+		border-radius: vars.$border-rad-heavy;
+		color: #fff;
+		font-weight: 600;
+		padding: 1em;
+		text-align: center;
+		white-space: nowrap;
+
+		&:not(.button_loading):hover {
+			background-color: var(--color-primary-hover);
+		}
+	}
+
+	&_loading {
+		cursor: not-allowed;
+		position: relative;
+
+		.text {
+			opacity: 0;
+		}
+	}
+}
+
+.loading {
+	& div {
+		border: 4px solid #fff;
+		border-color: #fff transparent transparent transparent;
+		height: 2em;
+		width: 2em;
+		margin: -1em;
+		top: 50%;
+		left: 50%;
+	}
+}
